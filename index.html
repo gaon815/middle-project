@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Staatliches Bauhaus Ausstellung 1923 — 반응형 웹 포스터</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=IBM+Plex+Sans+KR:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 원작: 요스트 슈미트, 바우하우스 전시 포스터 (1923) -->
+  <main class="poster">
+
+    <h1 class="sr-only">Staatliches Bauhaus Ausstellung — Weimar, 1923</h1>
+
+    <!-- 메타 정보 -->
+    <header class="meta">
+      <p class="meta__item"><b>STAATLICHES BAUHAUS</b>바이마르 국립 바우하우스</p>
+      <p class="meta__item"><b>1923. 8. 15 – 9. 30</b>포스터 표기 7–9월, 개막 연기</p>
+      <p class="meta__item"><b>WEIMAR</b>독일 바이마르</p>
+      <p class="meta__item"><b>POSTER 1923</b>디자인 요스트 슈미트</p>
+    </header>
+
+    <!-- 도형 + 메인 타이틀 (760 × 964 기준) -->
+    <div class="stage" aria-hidden="true">
+      <div class="fig">
+        <div class="s s-arc1"></div>
+        <div class="s s-arc2"></div>
+        <div class="s tex s-beige1"></div>
+        <div class="s tex s-beige2"></div>
+        <div class="s s-ring"></div>
+        <div class="s s-column"></div>
+        <div class="s s-bar"></div>
+        <div class="s s-hole"></div>
+        <div class="s s-sig1"></div>
+        <div class="s hatch s-sig2"></div>
+        <div class="s hatch s-sig3"></div>
+        <div class="s s-eye"></div>
+        <div class="s s-redstrip"></div>
+        <div class="s s-redblock"></div>
+        <div class="s tex s-juliblock"></div>
+        <div class="s s-stem"></div>
+        <div class="s s-halfdisc"></div>
+        <div class="s s-stripe"></div>
+        <div class="s tex s-weimarband"></div>
+        <div class="s s-pie"></div>
+
+        <!-- 원을 따라 휘는 글자 -->
+        <p class="arc arc--staat">
+          <span style="--a: -54deg">S</span><span style="--a: -49.1deg">T</span><span style="--a: -44.1deg">A</span><span style="--a: -39.2deg">A</span><span style="--a: -34.2deg">T</span><span style="--a: -29.2deg">L</span><span style="--a: -24.3deg">I</span><span style="--a: -19.3deg">C</span><span style="--a: -14.4deg">H</span><span style="--a: -9.4deg">E</span><span style="--a: -4.5deg">S</span>
+        </p>
+        <p class="arc arc--bauhaus">
+          <span style="--a: 2deg">B</span><span style="--a: 19deg">A</span><span style="--a: 36.3deg">U</span><span style="--a: 56.1deg">H</span><span style="--a: 73.6deg">A</span><span style="--a: 90.9deg">U</span><span style="--a: 109.6deg">S</span>
+        </p>
+
+        <!-- 태블릿에서 숨김 -->
+        <p class="ftext detach t-ausst"><span class="t-ausst__a">A</span><span class="t-ausst__rest">USSTELLUNG</span></p>
+        <p class="ftext detach t-juli">JULI<br>SEPT</p>
+        <p class="ftext detach t-year">1923</p>
+        <p class="ftext detach t-weimar">WEIMAR</p>
+      </div>
+    </div>
+
+    <!-- 태블릿 전용: 날짜·장소 -->
+    <div class="bigmeta" aria-hidden="true">
+      <span class="bigmeta__year">1923</span>
+      <span class="bigmeta__month">JULI — SEPT</span>
+      <span class="bigmeta__city">WEIMAR</span>
+    </div>
+
+    <!-- 전시 소개 -->
+    <section class="about stack" aria-labelledby="about-title">
+      <h2 class="label" id="about-title">AUSSTELLUNG · 전시 소개</h2>
+      <p>1919년 개교한 바이마르 국립 바우하우스가 학교의 작업 전체를 처음으로 대중 앞에 공개한 전시입니다. 공방에서 만든 가구와 직물, 도자, 금속 제품이 학생과 마이스터의 작업과 함께 소개되었습니다.</p>
+      <p>예정보다 몇 주 늦은 8월 15일에 문을 열어 9월 30일까지 약 1만 5천 명이 다녀갔습니다. 포스터에 인쇄된 ‘7–9월’ 표기는 개막이 미뤄지면서 스티커로 고쳐 붙였습니다.</p>
+    </section>
+
+    <!-- 프로그램 -->
+    <section class="prog stack" aria-labelledby="prog-title">
+      <h2 class="label" id="prog-title">PROGRAMM · 프로그램</h2>
+      <ol>
+        <li><b>하우스 암 호른</b><span>게오르크 무헤가 설계한 시범 주택</span></li>
+        <li><b>공방 전시</b><span>가구 · 직물 · 도자 · 금속</span></li>
+        <li><b>바우하우스 주간</b><span>강연 · 공연 · 음악회</span></li>
+        <li><b>그로피우스 강연</b><span>「예술과 기술 — 새로운 통일」</span></li>
+      </ol>
+    </section>
+
+    <!-- 태블릿 전용: AUSSTELLUNG 띠 -->
+    <p class="band" aria-hidden="true">
+      <span class="band__a">A</span>
+      <span class="band__rest"><span>U</span><span>S</span><span>S</span><span>T</span><span>E</span><span>L</span><span>L</span><span>U</span><span>N</span><span>G</span></span>
+    </p>
+
+  </main>
+</body>
+</html>
